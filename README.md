@@ -266,8 +266,8 @@ This project is [MIT](LICENSE) licensed.
 ## 🔗 Links
 
 - [npm Package](https://www.npmjs.com/package/sdk-imagebb)
-- [GitHub Repository](https://github.com/supratimrk/sdk-imagebb)
-- [Issue Tracker](https://github.com/supratimrk/sdk-imagebb/issues)
+- [GitHub Repository](https://github.com/SupratimRK/sdk-imagebb)
+- [Issue Tracker](https://github.com/SupratimRK/sdk-imagebb/issues)
 - [ImgBB API Documentation](https://api.imgbb.com/)
 
 ## 👤 Author

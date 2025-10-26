@@ -48,7 +48,7 @@ Enhancement suggestions are tracked as GitHub issues. When creating an enhanceme
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/supratimrk/sdk-imagebb.git
+git clone https://github.com/SupratimRK/sdk-imagebb
 cd sdk-imagebb
 ```
 

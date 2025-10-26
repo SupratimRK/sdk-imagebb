@@ -57,12 +57,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/supratimrk/sdk-imagebb"
+    "url": "git+https://github.com/SupratimRK/sdk-imagebb"
   },
   "bugs": {
-    "url": "https://github.com/supratimrk/sdk-imagebb/issues"
+    "url": "https://github.com/SupratimRK/sdk-imagebb/issues"
   },
-  "homepage": "https://github.com/supratimrk/sdk-imagebb#readme",
+  "homepage": "https://github.com/SupratimRK/sdk-imagebb#readme",
   "files": [
     "dist/**/*",
     "README.md",

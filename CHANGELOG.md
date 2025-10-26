@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file.
 - JSDoc documentation
 - Modern TypeScript configuration
 
-[1.0.0]: https://github.com/supratimrk/sdk-imagebb
+[1.0.0]: https://github.com/SupratimRK/sdk-imagebb
 
 
 
