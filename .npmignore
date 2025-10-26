@@ -1,0 +1,32 @@
+# Source files
+src/
+
+# Configuration files
+tsconfig.json
+.github/
+.vscode/
+.editorconfig
+
+# Development files
+*.md
+!README.md
+.dev/
+
+# Tests
+**/*.test.ts
+**/*.spec.ts
+__tests__/
+
+# Build scripts
+scripts/
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE
+.idea/
+*.swp
+*.swo
+.DS_Store

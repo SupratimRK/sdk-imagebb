@@ -1,0 +1,79 @@
+{
+  "name": "sdk-imagebb",
+  "version": "1.0.0",
+  "description": "Modern, lightweight TypeScript library for uploading images to ImgBB API. Features React 18 & 19 support, promise-based async/await interface, automatic error handling, and configurable expiration. Perfect for building image upload functionality in React applications with zero dependencies. Unofficial SDK - not affiliated with ImgBB.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "imgbb",
+    "imgbb-api",
+    "imgbb-uploader",
+    "imgbb-sdk",
+    "sdk-imagebb",
+    "image-upload",
+    "image-uploader",
+    "image-hosting",
+    "image-hosting-api",
+    "image-storage",
+    "image-cdn",
+    "react",
+    "react-image-upload",
+    "react-18",
+    "react-19",
+    "typescript",
+    "async-await",
+    "file-upload",
+    "cloud-storage",
+    "cdn",
+    "api-client",
+    "formdata",
+    "browser",
+    "upload-service",
+    "imgbb-client",
+    "unofficial-sdk"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean"
+  },
+  "author": "Supratim Mondal <mail@supratim.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supratimrk/sdk-imagebb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/supratimrk/sdk-imagebb/issues"
+  },
+  "homepage": "https://github.com/supratimrk/sdk-imagebb#readme",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
+}
