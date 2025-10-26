@@ -288,3 +288,5 @@ Give a  if this project helped you!
 ---
 
 **Keywords**: imgbb, imgbb-api, sdk-imagebb, image-upload, image-hosting, react, react-18, react-19, typescript, file-upload, cdn, image-cdn, cloud-storage, browser-upload, imgbb-client, unofficial-sdk
+
+<!-- Updated on 27-10-2025 -->
