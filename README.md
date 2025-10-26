@@ -240,9 +240,9 @@ interface Root {
 - **Social Media Applications** - User-generated content
 - **Form Builders** - Dynamic image upload fields
 
-##  Requirements
+## 🔧 Requirements
 
-- **Node.js**: >= 16.0.0
+- **Node.js**: >= 18.0.0 (Tested on 18.x, 20.x, 22.x, 24.x)
 - **npm**: >= 7.0.0
 - **React** (optional): ^18.0.0 || ^19.0.0
 - **TypeScript** (optional): >= 5.0.0
