@@ -1,4 +1,4 @@
-name: Publish to npm
+name: Publish to npm and JSR
 
 on:
   release:
@@ -30,6 +30,11 @@ jobs:
         node-version: '20.x'
         registry-url: 'https://registry.npmjs.org'
 
+    - name: Setup Deno
+      uses: denoland/setup-deno@v1
+      with:
+        deno-version: v1.x
+
     - name: Install dependencies
       run: npm install
 
@@ -46,6 +51,9 @@ jobs:
       run: npm publish --provenance --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    - name: Publish to JSR
+      run: npx jsr publish
 
     - name: Create Git tag (if manual)
       if: github.event_name == 'workflow_dispatch'

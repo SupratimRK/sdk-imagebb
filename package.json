@@ -41,7 +41,8 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "typecheck": "tsc --noEmit",
     "clean": "rimraf dist",
-    "prebuild": "npm run clean"
+    "prebuild": "npm run clean",
+    "publish:jsr": "jsr publish"
   },
   "author": "Supratim Mondal <mail@supratim.me>",
   "license": "MIT",

@@ -2,6 +2,8 @@
 
 [![npm version](https://img.shields.io/npm/v/sdk-imagebb.svg)](https://www.npmjs.com/package/sdk-imagebb)
 [![npm downloads](https://img.shields.io/npm/dm/sdk-imagebb.svg)](https://www.npmjs.com/package/sdk-imagebb)
+[![JSR](https://jsr.io/badges/@supratimrk/sdk-imagebb)](https://jsr.io/@supratimrk/sdk-imagebb)
+[![JSR Score](https://jsr.io/badges/@supratimrk/sdk-imagebb/score)](https://jsr.io/@supratimrk/sdk-imagebb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9%2B-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20%2B-green.svg)](https://nodejs.org/)
@@ -27,16 +29,35 @@ A powerful and easy-to-use image uploader for ImgBB with zero dependencies. Perf
 
 ## 📦 Installation
 
+### npm
 ```bash
 npm install sdk-imagebb
 ```
 
+### yarn
 ```bash
 yarn add sdk-imagebb
 ```
 
+### pnpm
 ```bash
 pnpm add sdk-imagebb
+```
+
+### JSR (Deno/Node.js)
+```bash
+# Using npm/pnpm/yarn
+npx jsr add @supratimrk/sdk-imagebb
+
+# Using Deno
+deno add @supratimrk/sdk-imagebb
+
+# Using import maps
+{
+  "imports": {
+    "@supratimrk/sdk-imagebb": "jsr:@supratimrk/sdk-imagebb@^1.0.0"
+  }
+}
 ```
 
 ##  Getting Started
@@ -162,7 +183,29 @@ uploadImageFromFile("./path/to/your/image.jpg")
 
 > **Note**: The `File` API is available in Node.js 20+. For Node.js 18, you'll need to use a polyfill or alternative approach for creating File objects.
 
-### 5. Vanilla JavaScript Example
+### 5. Deno Example
+
+```typescript
+import { imgbbUpload } from "@supratimrk/sdk-imagebb";
+
+// Read the image file from disk
+const imageBuffer = await Deno.readFile("./path/to/your/image.jpg");
+
+// Create a File-like object for Deno
+const file = new File([imageBuffer], "image.jpg", { type: "image/jpeg" });
+
+const response = await imgbbUpload({
+  key: Deno.env.get("IMGBB_API_KEY")!,
+  image: file,
+  name: "deno-upload-example",
+  expiration: 3600, // 1 hour
+});
+
+console.log("Upload successful!");
+console.log("Image URL:", response.data.url);
+```
+
+### 6. Vanilla JavaScript Example
 
 ```javascript
 import { imgbbUpload } from "sdk-imagebb";
@@ -196,7 +239,7 @@ fileInput.addEventListener('change', async (event) => {
 });
 ```
 
-### 6. Advanced Usage with Options
+### 7. Advanced Usage with Options
 
 ```typescript
 import { imgbbUpload } from "sdk-imagebb";
@@ -451,67 +494,6 @@ sdk-imagebb works in all modern browsers that support:
 
 > **Note**: Internet Explorer is not supported. For legacy browser support, consider using polyfills for Fetch and AbortController.
 
-## 🛠️ Development
-
-Want to contribute or run the project locally? Here's how to get started:
-
-### Prerequisites
-
-- Node.js >= 20.0.0
-- npm >= 7.0.0
-
-### Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/SupratimRK/sdk-imagebb.git
-   cd sdk-imagebb
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Build the project**
-   ```bash
-   npm run build
-   ```
-
-4. **Run type checking**
-   ```bash
-   npm run typecheck
-   ```
-
-5. **Clean build artifacts**
-   ```bash
-   npm run clean
-   ```
-
-### Project Structure
-
-```
-sdk-imagebb/
-├── src/
-│   ├── index.ts         # Main upload function
-│   ├── index.d.ts       # Type declarations
-│   └── interface.ts     # TypeScript interfaces
-├── dist/                # Compiled output (generated)
-├── package.json
-├── tsconfig.json
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-└── README.md
-```
-
-### Scripts
-
-| Script | Description |
-|--------|-------------|
-| `npm run build` | Compile TypeScript to JavaScript |
-| `npm run typecheck` | Check types without emitting files |
-| `npm run clean` | Remove dist folder |
-| `npm run prepare` | Auto-runs before publishing (builds the project) |
 
 ##  Contributing
 
@@ -619,6 +601,7 @@ This project is [MIT](LICENSE) licensed.
 ## 🔗 Links
 
 - [npm Package](https://www.npmjs.com/package/sdk-imagebb)
+- [JSR Package](https://jsr.io/@supratimrk/sdk-imagebb)
 - [GitHub Repository](https://github.com/SupratimRK/sdk-imagebb)
 - [Issue Tracker](https://github.com/SupratimRK/sdk-imagebb/issues)
 - [Changelog](https://github.com/SupratimRK/sdk-imagebb/blob/main/CHANGELOG.md)
