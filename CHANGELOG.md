@@ -1,6 +1,15 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2025-11-01
+### Added
+- **JSR Package Scoring Improvements**
+  - Linked GitHub repository for provenance verification
+  - Configured runtime compatibility (Deno, Node.js, Browser)
+  - Enabled CI/CD publishing with transparency log entries
+
+---
+
 ## [1.0.2] - 2025-11-01
 ### Added
 - **JSR Registry Support**
@@ -76,6 +85,7 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+[1.0.3]: https://github.com/SupratimRK/sdk-imagebb/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/SupratimRK/sdk-imagebb/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/SupratimRK/sdk-imagebb/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/SupratimRK/sdk-imagebb/releases/tag/v1.0.0
