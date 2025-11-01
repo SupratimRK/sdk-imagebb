@@ -55,7 +55,7 @@ deno add @supratimrk/sdk-imagebb
 # Using import maps
 {
   "imports": {
-    "@supratimrk/sdk-imagebb": "jsr:@supratimrk/sdk-imagebb@^1.0.0"
+    "@supratimrk/sdk-imagebb": "jsr:@supratimrk/sdk-imagebb@^1.0.2"
   }
 }
 ```
