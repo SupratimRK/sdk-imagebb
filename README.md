@@ -60,6 +60,13 @@ deno add @supratimrk/sdk-imagebb
 }
 ```
 
+## 🚀 Publishing
+
+This package is published to both **npm** and **JSR** registries:
+
+- **npm**: `npm install sdk-imagebb`
+- **JSR**: `npx jsr add @supratimrk/sdk-imagebb` or `deno add @supratimrk/sdk-imagebb`
+
 ##  Getting Started
 
 ### 1. Get Your ImgBB API Key
