@@ -1,7 +1,7 @@
 {
   "name": "sdk-imagebb",
   "version": "1.0.0",
-  "description": "Modern, lightweight TypeScript library for uploading images to ImgBB API. Features React 18 & 19 support, promise-based async/await interface, automatic error handling, and configurable expiration. Perfect for building image upload functionality in React applications with zero dependencies. Unofficial SDK - not affiliated with ImgBB.",
+  "description": "Modern, lightweight TypeScript library for uploading images to ImgBB API. Features React 19 & Node 24 support, promise-based async/await interface, automatic error handling, and configurable expiration. Perfect for building image upload functionality in React applications with zero dependencies.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
@@ -20,6 +20,10 @@
     "react-image-upload",
     "react-18",
     "react-19",
+    "nodejs",
+    "node-24",
+    "node-22",
+    "javascript",
     "typescript",
     "async-await",
     "file-upload",
@@ -29,8 +33,7 @@
     "formdata",
     "browser",
     "upload-service",
-    "imgbb-client",
-    "unofficial-sdk"
+    "imgbb-client"
   ],
   "scripts": {
     "build": "tsc",
